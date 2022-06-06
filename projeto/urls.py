@@ -17,16 +17,10 @@ from turtle import home
 from django.contrib import admin
 from django.http import HttpResponse
 from django.urls import path
+from recipes.views import home,sobre,contato
 
-def home(request):
-    return HttpResponse('HOME')
 
-def sobre(request):
-    return HttpResponse('sobre')
 
-def contato(request):
-    return HttpResponse('contato')
-    
 
 urlpatterns = [
     path('admin/', admin.site.urls),
