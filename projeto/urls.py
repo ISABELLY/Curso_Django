@@ -17,13 +17,11 @@ from turtle import home
 from django.contrib import admin
 from django.http import HttpResponse
 from django.urls import path
-from recipes.views import home,sobre,contato
+from recipes.views import home
 
 
 
 
 urlpatterns = [
-    path('', home),#home
-    path('sobre/', sobre),#sobre
-    path('contato/', contato),#contato
+    path('', home),
 ]
